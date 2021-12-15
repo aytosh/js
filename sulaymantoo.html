@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1 id="tema">Sulayman Too</h1>
+    <p id="text">Welcome to Sulayman Too </p>
+    <img id="photo" src="./index.jpeg" height="400">
+    <br>
+    <button onclick="change()">Next</button>
+    <button onclick="back()">Back</button>
+
+    <h1 id="counter">0</h1>
+    <button id='minus' onclick="minus()">-</button>
+    <button id="plus" onclick="plus()">+</button>
+
+
+
+
+
+
+</body>
+<script>
+    function change() {
+        document.getElementById("photo").src = "jetioguz.jpeg";
+        document.getElementById("tema").innerHTML = "Jeti Oguz";
+        document.getElementById("text").innerHTML = "Welcome to Jeti Oguz";
+        document.getElementById("text").style.color = "blue";
+        document.body.style.background = "wheat";
+    }
+</script>
+
+<script>
+    function back() {
+        document.getElementById("photo").src = "sulaymantoo.jpeg";
+        document.getElementById("tema").innerHTML = "Sulayman Too";
+        document.getElementById("text").innerHTML = "Welcome to Sulayman Too in Osh";
+        document.getElementById("text").style.color = "green";
+        document.body.style.background = "light-blue";
+
+
+
+
+    }
+
+    let c = 0
+
+    function plus() {
+        c++
+        document.getElementById('counter').innerText = c
+    }
+
+    function minus() {
+        c -= 1
+        document.getElementById('counter').innerText = c
+    }
+</script>
+
+
+</html>
